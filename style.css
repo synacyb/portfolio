@@ -52,7 +52,7 @@ header{
 .contact {
     display: inline-block;           /* Makes it behave like a button */
     font-size: 1.8rem;
-    font-weight: 800;
+    font-weight: 500;
     color: #8c0407;
     border: 2px solid #8c0407;       /* Defines the border */
     border-radius: 50px;             /* Rounded corners (not a circle unless height=width) */
@@ -114,6 +114,9 @@ nav a.active{
         border-radius: 0.5rem;
         border-bottom: 0.5rem solid #8c0407;
     }
+    .contact{
+        display: none;
+    }
 }
 
 section{
@@ -149,14 +152,32 @@ span{
     font-size: 1.6rem;
 }
 
+@keyframes simple-animation {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
 .home-img img{
     position: relative;
-    width: 32vw;
-    /* border: 5px solid #b74b4b; */
+    width: 25vw;
     border-radius: 50%;
     overflow: hidden;
     box-shadow: 0 0 50px #8c0407;
     cursor: pointer;
+    transition: 0.9s ease;
+    animation: simple-animation 3.5s ease-in-out infinite;
+}
+
+.home-img img:hover{
+    box-shadow: 0 0 50px #8c0407;
+    box-shadow: 0  0 32px #d60307;
 }
 
 .social-icons a{
@@ -278,4 +299,3 @@ span{
         margin-top: 4rem;
     }
 }
-
