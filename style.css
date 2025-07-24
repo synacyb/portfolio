@@ -46,6 +46,7 @@ header{
 }
 .logo span{
     color: #8c0407;
+    text-shadow: 0 0 15px #8c0407;
 }
 
 .contact {
