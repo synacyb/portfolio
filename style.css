@@ -39,31 +39,32 @@ header{
 
 .logo{
     font-size: 3rem;
-    color: #b74b4b;
+    color: white;
     font-weight: 800;
     cursor: pointer;
     transition: 0.5s ease;
 }
+.logo span{
+    color: #8c0407;
+}
 
-/* .logo:hover{
-    transform: scale(1.1);
-} */
 .contact {
     display: inline-block;           /* Makes it behave like a button */
     font-size: 1.8rem;
-    color: #b74b4b;
-    border: 2px solid #b74b4b;       /* Defines the border */
+    font-weight: 800;
+    color: #8c0407;
+    border: 2px solid #8c0407;       /* Defines the border */
     border-radius: 50px;             /* Rounded corners (not a circle unless height=width) */
     padding: 0.5rem 1.5rem;          /* Spacing inside the button */
     text-decoration: none;           /* Remove underline */
     cursor: pointer;                 /* Pointer cursor on hover */
     background-color: transparent;
-    transition: all 0.3s ease;       /* Smooth hover effect */
+    transition: all 1s ease;       /* Smooth hover effect */
 }
 
 .contact:hover {
-    box-shadow: 0  0 15px #b74b4b;
-    background-color: #b74b4b;
+    box-shadow: 0  0 15px #8c0407;
+    background-color: #8c0407;
     color: black;
 }
 nav a{
@@ -77,8 +78,8 @@ nav a{
 
 nav a:hover,
 nav a.active{
-    color: #b74b4b;
-    border-bottom: 3px solid #b74b4b;
+    color: #8c0407;
+    border-bottom: 3px solid #8c0407;
 }
 
 @media(max-width:995px){
@@ -88,8 +89,8 @@ nav a.active{
         top: 0;
         right: 0;
         width: 40%;
-        border-left: 3px solid #b74b4b;
-        border-bottom: 3px solid #b74b4b;
+        border-left: 3px solid #8c0407;
+        border-bottom: 3px solid #8c0407;
         border-bottom-left-radius: 2rem;
         padding: 1rem solid;
         background-color: #161616;
@@ -110,7 +111,7 @@ nav a.active{
     nav a.active{
         padding: 1rem;
         border-radius: 0.5rem;
-        border-bottom: 0.5rem solid #b74b4b;
+        border-bottom: 0.5rem solid #8c0407;
     }
 }
 
@@ -134,7 +135,7 @@ section{
 }
 
 span{
-    color: #b74b4b;
+    color: #8c0407;
 }
 
 .home-content h3{
@@ -147,22 +148,14 @@ span{
     font-size: 1.6rem;
 }
 
-.home-img{
-    border-radius: 50%;
-}
-
 .home-img img{
     position: relative;
     width: 32vw;
+    /* border: 5px solid #b74b4b; */
     border-radius: 50%;
-    box-shadow: 0 0 25px solid #b74b4b;
+    overflow: hidden;
+    box-shadow: 0 0 50px #8c0407;
     cursor: pointer;
-    transition: 0.2s linear;
-}
-
-.home-img img:hover{
-    font-size: 1.8rem;
-    font-weight: 500;
 }
 
 .social-icons a{
@@ -172,19 +165,19 @@ span{
     width: 4rem;
     height: 4rem;
     background-color: transparent;
-    border: 0.2rem solid #b74b4b;
+    border: 0.2rem solid #8c0407;
     font-size: 2rem;
     border-radius: 50%;
     margin: 3rem 1.5rem 3rem 0;
     transition: 0.3s ease;
-    color: #b74b4b;
+    color: #8c0407;
 }
 
 .social-icons a:hover{
     color: black;
     transform: scale(1.3) translateY(-5px);
-    background-color: #b74b4b;
-    box-shadow: 0  0 25px #b74b4b;
+    background-color: #8c0407;
+    box-shadow: 0  0 25px #8c0407;
 }
 
 .btn{
@@ -193,19 +186,19 @@ span{
     background-color: black;
     border-radius: 4rem;
     font-size: 1.6rem;
-    color: #b74b4b;
+    color: #8c0407;
     letter-spacing: 0.3rem;
     font-weight: 600;
-    border: 2px solid #b74b4b;
+    border: 2px solid #8c0407;
     transition: 0.3s ease;
     cursor: pointer;
 }
 
 .btn:hover{
     transform: scale3d(1.03);
-    background-color: #b74b4b;
+    background-color: #8c0407;
     color: black;
-    box-shadow: 0 0 25px #b74b4b;
+    box-shadow: 0 0 25px #8c0407;
 }
 
 .typing-text{
@@ -220,7 +213,7 @@ span{
 
 .typing-text span::before{
     content: "software Developer";
-    color: #b74b4b;
+    color: #8c0407;
     animation: words 20s infinite;
 }
 
@@ -237,7 +230,7 @@ span{
 
 @keyframes cursor{
     to{
-        border-left: 3px solid #b74b4b;
+        border-left: 3px solid #8c0407;
     }
 }
 
