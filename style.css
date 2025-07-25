@@ -314,7 +314,8 @@ span{
     flex-wrap: wrap;
 }
 .serv-card {
-    background-color: rgba(255, 255, 255, 0.822);
+    background-color: rgba(255, 255, 255, 0.3);
+    /* background-color: rgba(105, 8, 8, 0.808); */
     width: 35em;
     border-radius: 10px;
     padding: 25px;
@@ -323,21 +324,22 @@ span{
 }
 .serv-card:hover {
     transform: scale(1.1);
+    background-color: #8c0406a2;
 }
 .icon {
     text-align: center;
 }
 
 .info {
-    text-align: center;
+    text-align: left;
 }
 .info h3 {
-    color: #8c0407;
-    font-size: 1.5em;
+    color: white;
+    font-size: 1.8em;
     font-weight: 700;
-    margin: 10px;
+    margin-bottom: 10px;
 }
 .info p {
-    color: black;
+    color: white;
     font-size: 1em;
 }
