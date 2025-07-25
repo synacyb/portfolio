@@ -129,9 +129,20 @@ section{
     justify-content: center;
     align-items: center;
     gap: 8rem;
-    background-color: black;
 }
 
+.home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(img/dark-themebg.jpg);
+  background-size: cover;
+  filter: blur(5px);
+  z-index: -1;
+}
 .home .home-content h1{
     font-size: 6rem;
     font-weight: 700;
@@ -241,7 +252,7 @@ span{
 
 .typing-text span::after{
     content: "";
-    background-color: black;
+    background-color: transparent;
     position: absolute;
     width: calc(100% + 8px);
     height: 100%;
@@ -299,6 +310,13 @@ span{
         margin-top: 4rem;
     }
 }
+/* .cards{
+    background-image: url(img/section2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
+
 .title {
     display: flex;
     justify-content: center;
