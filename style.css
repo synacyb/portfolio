@@ -113,7 +113,7 @@ nav a.active{
         padding: 1rem;
         border-radius: 0.5rem;
         border-bottom: 0.5rem solid #8c0407;
-    }
+    }#262626
     .contact{
         display: none;
     }
@@ -138,9 +138,10 @@ section{
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url(img/dark-themebg.jpg);
-  background-size: cover;
-  filter: blur(5px);
+  background-image: url(img/theme2.jpg);
+  background-size: contain;
+  background-position: center;
+  filter: blur(55px);
   z-index: -1;
 }
 .home .home-content h1{
@@ -166,29 +167,27 @@ span{
 @keyframes simple-animation {
     0% {
         transform: translateY(0);
+        box-shadow: 0 -45px 50px #8c0407;
     }
     50% {
         transform: translateY(-20px);
+        box-shadow: 0 45px 50px #8c0407;
     }
     100% {
         transform: translateY(0);
+        box-shadow: 0 -45px 50px #8c0407;
     }
 }
 
 .home-img img{
     position: relative;
     width: 25vw;
-    border-radius: 50%;
+    border-radius: 35px 200px;
     overflow: hidden;
     box-shadow: 0 0 50px #8c0407;
     cursor: pointer;
     transition: 0.9s ease;
     animation: simple-animation 3.5s ease-in-out infinite;
-}
-
-.home-img img:hover{
-    box-shadow: 0 0 50px #8c0407;
-    box-shadow: 0  0 32px #d60307;
 }
 
 .social-icons a{
@@ -216,7 +215,7 @@ span{
 .btn{
     display: inline-block;
     padding: 1rem 2.8rem;
-    background-color: black;
+    background-color: transparent;
     border-radius: 4rem;
     font-size: 1.6rem;
     color: #8c0407;
@@ -278,7 +277,7 @@ span{
         content: "Web Designer";
     }
     61%, 80%{
-        content: "Frelancer";
+        content: "Frelancer";    background: linear-gradient(black, red, 25%);
     }
     81%, 100%{
         content: "Script Writer";
@@ -310,12 +309,13 @@ span{
         margin-top: 4rem;
     }
 }
-/* .cards{
-    background-image: url(img/section2.jpg);
-    background-position: center;
+.cards{
+    /* background-image: url(img/section2.jpg); */
+    /* background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
-} */
+    background-repeat: no-repeat; */
+    background-color: #000000;
+}
 
 .title {
     display: flex;
@@ -332,8 +332,8 @@ span{
     flex-wrap: wrap;
 }
 .serv-card {
-    background-color: rgba(255, 255, 255, 0.3);
-    /* background-color: rgba(105, 8, 8, 0.808); */
+    /* background-color: rgba(255, 255, 255, 0.3); */
+    background-color: #262626;
     width: 35em;
     border-radius: 10px;
     padding: 25px;
@@ -343,6 +343,10 @@ span{
 .serv-card:hover {
     transform: scale(1.1);
     background-color: #8c0406a2;
+    /* .serv-button{
+        color: #ffffff;
+        border: 2px solid #ffffff;
+    } */
 }
 .icon {
     text-align: center;
@@ -359,5 +363,25 @@ span{
 }
 .info p {
     color: white;
-    font-size: 1em;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+.serv-button{
+
+    display: inline-block;           /* Makes it behave like a button */
+    font-size: 1rem;
+    font-weight: 500;
+    color: #ffffff;
+    border: 2px solid #ffffff;       /* Defines the border */
+    border-radius: 25px;        /* Rounded corners (not a circle unless height=width) */
+    padding: 0.5rem 1.5rem;          /* Spacing inside the button */
+    text-decoration: none;           /* Remove underline */
+    cursor: pointer;                 /* Pointer cursor on hover */
+    background-color: transparent;
+    transition: all 1s ease; 
+}
+.serv-button:hover {
+    box-shadow: 0  0 15px #8c0407;
+    background-color: #8c0407;
+    color: rgb(255, 255, 255);
 }
