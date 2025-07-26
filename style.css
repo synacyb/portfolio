@@ -141,7 +141,7 @@ section{
   background-image: url(img/theme2.jpg);
   background-size: contain;
   background-position: center;
-  filter: blur(55px);
+  filter: blur(250px);
   z-index: -1;
 }
 .home .home-content h1{
