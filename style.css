@@ -55,7 +55,7 @@ header{
     font-weight: 500;
     color: #8c0407;
     border: 2px solid #8c0407;       /* Defines the border */
-    border-radius: 50px;             /* Rounded corners (not a circle unless height=width) */
+    border-radius: 5px;             /* Rounded corners (not a circle unless height=width) */
     padding: 0.5rem 1.5rem;          /* Spacing inside the button */
     text-decoration: none;           /* Remove underline */
     cursor: pointer;                 /* Pointer cursor on hover */
@@ -216,7 +216,7 @@ span{
     display: inline-block;
     padding: 1rem 2.8rem;
     background-color: transparent;
-    border-radius: 4rem;
+    border-radius: 5px;
     font-size: 1.6rem;
     color: #8c0407;
     letter-spacing: 0.3rem;
