@@ -335,6 +335,7 @@ span{
 @keyframes cursor{
     to{
         border-left: 3px solid var(--blue-color);
+
     }
 }
 
