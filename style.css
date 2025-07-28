@@ -129,7 +129,7 @@ header{
     text-decoration: none;           /* Remove underline */
     cursor: pointer;                 /* Pointer cursor on hover */
     background-color: transparent;
-    transition: all 1s ease;       /* Smooth hover effect */
+    transition: all 0.3s ease;       /* Smooth hover effect */
 }
 
 .contact:hover {
