@@ -114,6 +114,7 @@ header{
 }
 .logo span{
     color: var(--blue-color);
+    font-size: 45px;
     /* text-shadow: 0 0 15px var(--blue-color); */
 }
 
@@ -394,7 +395,7 @@ span{
     font-size: 30px;
     margin-right: 10px;
     color: var(--blue-color);
-    margin-top: 5px;
+    margin-top: 6px;
 }
 .info-title{
     font-size: 1.5rem;
@@ -404,10 +405,6 @@ span{
     font-size: 1.2rem;
 }
 .cards{
-    /* background-image: url(img/section2.jpg); */
-    /* background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat; */
     background-color: #ffffff;
 }
 
