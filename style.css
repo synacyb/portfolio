@@ -12,14 +12,40 @@
 :root {
     --hue-color: 242;
 
-    --skin-color: hsl(342, 92%, 46%);
-    --mirage-color: hsl(210, 10%, 23%);
-    --title-color: hsl(var(--hue-color), 8%, 95%);
-    --text-color: hsl(var(--hue-color), 8%, 85%);
-    --body-color: hsl(var(--hue-color), 19%, 5%);
-    --box-color: hsl(var(--hue-color), 14%, 10%);
-    --scroll-box-color: hsl(var(--hue-color), 12%, 38%);
-    --scroll-thumb-color: hsl(var(--hue-color), 12%, 26%);
+    --primary-blue: #4154b0;
+    --secondary-blue: #2d3d85;
+    --light-blue: #5a6bc4;
+    --accent-blue: #6b7dff;
+    
+    --white: #ffffff;
+    --light-gray: #f8f9fa;
+    --medium-gray: #6c757d;
+    --dark-gray: #343a40;
+    --black: #1a1a1a;
+    
+    --accent-orange: #ff7043;
+    --accent-gold: #ffd700;
+    --accent-green: #4caf50;
+    --accent-red: #f44336;
+    
+    --bg-primary: #ffffff;
+    --bg-secondary: #f8f9fa;
+    --bg-dark: #2c3e50;
+    --bg-blue-light: rgba(65, 84, 176, 0.05);
+    
+    --text-primary: #2c3e50;
+    --text-secondary: #6c757d;
+    --text-light: #ffffff;
+    --text-muted: #adb5bd;
+
+    --skin-color: var(--accent-orange);
+    --mirage-color: var(--dark-gray);
+    --title-color: var(--text-primary);
+    --text-color: var(--text-secondary);
+    --body-color: var(--bg-primary);
+    --box-color: var(--bg-secondary);
+    --scroll-box-color: var(--medium-gray);
+    --scroll-thumb-color: var(--dark-gray);
 
     --body-font: 'Poppins', sans-serif;
     --signature-font: 'Turret Road', sans-serif;
@@ -47,9 +73,9 @@
     --z-fixed: 10;
     --z-modal: 100;
 
-}:root {
-    --black-color: #000000;
-    --blue-color: #3f38c9;
+
+    --black-color: var(--text-primary);
+    --blue-color: var(--primary-blue);
 }
 
 html{
