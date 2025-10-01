@@ -3,8 +3,8 @@
 :root {
   --hue-color: 242;
 
-  --skin-color: hsl(221, 100%, 49%);
-  --mirage-color: hsl(210, 100%, 25%);
+  --skin-color: #d48330;
+  --mirage-color: #9c5106;
   --title-color: hsl(var(--hue-color), 8%, 95%);
   --text-color: hsl(var(--hue-color), 8%, 85%);
   --body-color: hsl(var(--hue-color), 19%, 5%);
@@ -113,6 +113,7 @@ input {
   position: relative;
   z-index: 1;
   transition: 0.4s;
+  width: max-content;
 }
 .button::after {
   position: absolute;
@@ -266,9 +267,7 @@ input {
   margin-left: 100px;
 }
 .home {
-  background: url("https://i.postimg.cc/DZxD1xGL/home-bg.jpg");
-  background-size: cover;
-  background-position: center center;
+  background-color: #17181d;
   height: 100vh;
 }
 .home-container {
@@ -276,6 +275,7 @@ input {
   height: 100%;
   align-items: center;
 }
+
 .home-social {
   position: absolute;
   top: 1.8rem;
@@ -309,9 +309,31 @@ input {
 .home-social-link:hover {
   transform: translateY(0.25rem);
 }
-.home-img {
-  display: none;
+.home-pg {
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
 }
+.imgg{
+  border-radius: 50%;
+  width: 50%;
+  height: 50%;
+  border-bottom: 4px solid var(--skin-color);
+}
+
+
+@media (max-width: 1060px) {
+  .imgg {
+    display: none;
+  }
+}
+
+.home-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .home-title {
   font-size: var(--biggest-font-size);
 }
