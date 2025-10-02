@@ -10,7 +10,7 @@
   --body-color: hsl(var(--hue-color), 19%, 5%);
   --box-color: hsl(var(--hue-color), 14%, 10%);
   --scroll-box-color: hsl(var(--hue-color), 12%, 38%);
-  --scroll-thumb-color: hsl(var(--hue-color), 12%, 26%);
+  --scroll-thumb-color: #d48330;
 
   --body-font: "Poppins", sans-serif;
   --signature-font: "Turret Road", sans-serif;
@@ -318,7 +318,9 @@ input {
   border-radius: 50%;
   width: 50%;
   height: 50%;
-  border-bottom: 4px solid var(--skin-color);
+  /* border-bottom: 4px solid var(--skin-color); */
+  border-left: 4px solid var(--skin-color);
+  border-left-style: groove;
 }
 
 
