@@ -310,15 +310,14 @@ input {
   transform: translateY(0.25rem);
 }
 .home-pg {
-  display: flex;
+  display:flex;
   justify-content: space-between;
   justify-items: center;
 }
 .imgg{
   border-radius: 50%;
-  width: 50%;
-  height: 50%;
-  /* border-bottom: 4px solid var(--skin-color); */
+  width: 40%;
+  height: 40%;
   border-left: 4px solid var(--skin-color);
   border-left-style: groove;
 }
